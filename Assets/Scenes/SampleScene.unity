@@ -131,6 +131,8 @@ GameObject:
   - component: {fileID: 96906491}
   - component: {fileID: 96906490}
   - component: {fileID: 96906493}
+  - component: {fileID: 96906494}
+  - component: {fileID: 96906495}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -147,7 +149,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96906489}
   m_BodyType: 0
-  m_Simulated: 1
+  m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -285,6 +287,36 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &96906494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96906489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5128aafaeb9a02940a59198679b6db4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SampleScript
+--- !u!114 &96906495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96906489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc4e0ddb8269597468eae546fcbc74c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+  moveSpeedX: 0.1
+  moveSpeedY: 0
+  moveSpeedZ: 0
+  rotateSpeedX: 0
+  rotateSpeedY: 0
+  rotateSpeedZ: 0.1
 --- !u!1 &473168825
 GameObject:
   m_ObjectHideFlags: 0
